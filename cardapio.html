@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <link href="./assets/icons8-pizza-60.ico" rel="shortcut icon">
+            <link rel="stylesheet" href="style.css">
+            <link rel="script" href="script.js">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pizzaria Dom Caessi | Menu</title>
+        </head>
+        <body>
+            <header>
+                <div class = "logo_caixa">
+                    <img src="./assets/logo7.png" alt="Pizzaria Dom Caessi" class = "logo">
+                </div>
+
+                <!-- Fazendo menu. --> 
+                <div>
+                <nav> 
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+
+                    </ul>
+                </nav>
+                </div>
+        <main class = "main-cardapio">
+            <!--parte do cardapio-->
+        <h1 class="titulo-cardapio">Cardápio</h1>
+
+        <p class="texto-cardapio">Veja a baixo as pizzas disponíveis no nosso cardápio.</p>
+
+
+        
+        <div class="cardapio">          
+                <ul class="pizza-list">
+                    <li class="pizza-item">
+                      <h4 class="titulo_cardapio">Calabresa</h4>
+                      <img src="./assets/pizza3_cardapio.png" alt="Pizza calabresa" class="img-calabresa">
+                      <p class = "desc_cardapio">Molho de tomate, calabresa,<br> mussarela e cebola.</p>
+                      <p class = "desc_cardapio">R$40,00</p>
+                    </li>
+                  
+                    <li class="pizza-item">
+                      <h4 class="titulo_cardapio">Pepperoni</h4>
+                      <img src="./assets/pizza2_cardapio.png" alt="Pizza pepperoni" class="img-pepperoni">
+                      <p class = "desc_cardapio" >Molho de tomate, queijo <br> e pepperoni.</p>
+                      <p class = "desc_cardapio" >R$40,00</p>
+                    </li>
+                  
+                    <li class="pizza-item">
+                      <h4 class="titulo_cardapio">Portuguesa</h4>
+                      <img src="./assets/pizza1_cardapio.png" alt="Pizza portuguesa" class="img-portuguesa">
+                      <p class = "desc_cardapio" >Molho de tomate, presunto, mussarela,<br> ovo, pimentão e azeitona</p>
+                      <p class = "desc_cardapio" >R$45,00</p>
+                    </li>
+                  </ul>
+        </div>
+
+        <div onclick="openModal()" class="butao">Ver promoções</div>
+
+        <div id="modal-container" class="modal-container">
+            <div class="modal">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Promoções!</h1>
+                <img src="./assets/modalpizza.png" alt="Promoções" class ="imagem-modal">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </main>
+    <footer class = "footer-cardapio" >
+        <img class="logo_footer" src="./assets/logo7.png" alt="logo">
+             <p class="copyright">&copy; todos os direitos reservados para Dom Caessi</p>
+
+                <div class="redes_sociais">
+                    <a href="https://www.whatsapp.com"></a><img src="./assets/wpp.png" alt="WhatsApp">
+                    <a href="https://www.instagram.com"></a><img src="./assets/logo_insta.png" alt="Instagram">
+                    <a href="https://www.facebook.com"></a><img src="./assets/face_logo.png" alt="Facebook">
+                </div>
+    </footer>
+</body>
+</html>

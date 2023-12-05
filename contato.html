@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <link href="./assets/icons8-pizza-60.ico" rel="shortcut icon">
+            <link rel="stylesheet" href="style.css">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pizzaria Dom Caessi | Menu</title>
+        </head>
+        <body>
+            <header>
+                <div class = "logo_caixa">
+                    <img src="./assets/logo7.png" alt="Pizzaria Dom Caessi" class = "logo">
+                </div>
+
+                <!-- Fazendo menu. --> 
+                <div>
+                    <nav> 
+                        <ul> 
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="cadastro.html">Cadastro</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+        <h2 class = "titulo_contato">Faça seu contato conosco!</h2>
+        <main class = "main_contato">
+            
+            <form name ="contato" method="post" onsubmit="alert('Enviei o formulário')">
+                
+                <div class = "formulario_cadastro">
+                    <label for="nome" class="tipo">Nome: </label>
+                    <input type="text" name="nome" required><br>
+
+                    <label for="email" class="tipo">E-mail:</label>
+                    <input type="email" name="email" required><br>
+
+                    <label for="celular" class="tipo">Celular :</label>
+                    <input type="number" name="celular" required><br>
+
+                
+                    <label for="mensagem" class="tipo">Mensagem :</label>
+                    <textarea type="text" name="mensagem" rows = "4" required></textarea><br>
+                
+
+                    <label for="titulo_pref_cont" class="tipo">Como prefere nosso contato? :</label>
+                    <label class = "label_pref_cont">WhatsApp</label> 
+                        <input type="radio" name="cont" value="wpp" class="radio_pref_cont">
+                    <label class = "label_pref_cont">E-mail</label>
+                        <input type="radio" name="cont" value="email" class="radio_pref_cont">
+                    <label class = "label_pref_cont">Telefone</label>
+                        <input type="radio" name="cont" value="telefone" class="radio_pref_cont"><br>
+
+                    <label class="tipo">Motivo do contato: </label>
+                    <select name="motivo" class = "select_motivo">
+                        <option value="">Selecione o motivo</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="crítica">Crítica</option>
+                        <option value="reclamação">Reclamação</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="Outros">Outros</option>
+                    </select><br>
+
+                    <label class="tipo" id = "titulo_promo">Gostaria de receber e-mails de promoções? </label><input type="checkbox" class="check_cont" value="sim"><br>
+                    
+
+                    <button class = "botao_enviar" type="submit">Enviar</button>
+                </div>
+                </form>
+        </main>
+        <footer class = "footer-cardapio" id ="footer-contato">
+            <img src="./assets/logo7.png" alt="Seu Pizza" class="logo_footer">
+            <p class="copyright">&copy; Todos os direitos reservados para seu Pizza</p>
+
+            <div class="redes_sociais">
+                <a href="https://www.whatsapp.com"></a><img src="./assets/wpp.png" alt="WhatsApp">
+                <a href="https://www.instagram.com"></a><img src="./assets/logo_insta.png" alt="Instagram">
+                <a href="https://www.facebook.com"></a><img src="./assets/face_logo.png" alt="Facebook">
+            </div>
+
+          </footer>
+
+          
+</html>

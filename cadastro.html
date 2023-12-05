@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <link href="icons8-pizza-60.ico" rel="shortcut icon">
+            <link rel="stylesheet" href="style.css">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pizzaria Dom Caessi | Menu</title>
+        </head>
+        <body>
+            <header>
+                <div class = "logo_caixa">
+                    <img src="./assets/logo7.png" alt="Pizzaria Dom Caessi" class = "logo">
+                </div>
+
+                <!-- Fazendo menu. --> 
+                <div>
+                <nav> 
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
+                </nav>
+                </div>
+
+        <h1 class="titulo-cadastro">Cadastro</h1>
+        <main class="cadastro">
+
+            <form th:action="respostaForm" method="post">
+                <div class="textos">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email_cadastro" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" required>
+
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+
+        </main>
+        <footer class = "footer-cadastro" >
+            <img class="logo_footer" src="./assets/logo7.png" alt="logo">
+            <p class="copyright">&copy; todos os direitos reservados para Dom Caessi</p>
+
+            <div class="redes_sociais">
+                <a href="https://www.whatsapp.com"></a><img src="./assets/wpp.png" alt="WhatsApp">
+                <a href="https://www.instagram.com"></a><img src="./assets/logo_insta.png" alt="Instagram">
+                <a href="https://www.facebook.com"></a><img src="./assets/face_logo.png" alt="Facebook">
+            </div>
+        </footer>
+
+        
+
+        </body>
+    </html>
